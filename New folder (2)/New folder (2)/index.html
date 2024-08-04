@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Sound on Button Click</title>
+<style>
+    body {
+            background-image: url('image.jpg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: fill ;
+        }
+</style>
+</head>
+<div class="button-container">
+   
+    <button id="button1">C</button>
+    <button id="button2">G</button>
+    <button id="button3">D</button>
+    <button id="button4">A</button>
+    <button id="button5">E</button>
+    <button id="button6">F</button>
+    <button id="button7">B</button>
+    <button id="button8">F#</button>
+    <button id="button9">C#</button> 
+    <button id="button10">Ab</button>
+    <button id="button11">Eb</button>
+    <button id="button12">Bb</button>
+</div>
+    
+    
+    <audio id="sound1" src="D:\New folder (2)\New folder (2)\C.mp3"></audio>
+    <audio id="sound2" src="C:\Users\nikun\Desktop\New folder (2)\G.mp3"></audio>
+    <audio id="sound3" src="C:\Users\nikun\Desktop\New folder (2)\D.mp3"></audio>
+    <audio id="sound4" src="C:\Users\nikun\Desktop\New folder (2)\A.mp3"></audio>
+    <audio id="sound5" src="C:\Users\nikun\Desktop\New folder (2)\E.mp3"></audio>
+    <audio id="sound6" src="C:\Users\nikun\Desktop\New folder (2)\F.mp3"></audio>
+    <audio id="sound7" src="C:\Users\nikun\Desktop\New folder (2)\B.mp3"></audio>
+    <audio id="sound8" src="C:\Users\nikun\Desktop\New folder (2)\Ff.mp3"></audio>
+    <audio id="sound9" src="C:\Users\nikun\Desktop\New folder (2)\Cc.mp3""></audio>
+    <audio id="sound10" src="C:\Users\nikun\Desktop\New folder (2)\Ab.mp3"></audio>
+    <audio id="sound11" src="C:\Users\nikun\Desktop\New folder (2)\Eb.mp3"></audio>
+    <audio id="sound12" src="C:\Users\nikun\Desktop\New folder (2)\Bb.mp3"></audio>
+
+    
+    <style>
+        .button-container {
+            position: relative;
+            height: 500px; /* Adjust height to contain all buttons */
+            border: 0px solid #ccc; /* Optional: visual boundary */
+        }
+        .button-container button {
+            position: absolute;
+            padding: 10px 10px;
+            background-color: #d8dcdf; /* Blue background */
+            color: white; /* White text */
+            border-color: #d8dcdf;
+        
+        }
+        #button1 { top: 120px; left: 618px; }
+        #button2 { top: 140px; left: 690px; }
+        #button3 { top: 196px; right: 500px; }
+        #button4 { top: 265px; left: 755px; }
+        #button5 { top: 340px; right: 490px; }
+        #button6 { bottom: 325px; left: 545px; }
+        #button7 { bottom: 60px; right: 540px; }
+        #button8 { bottom: 35px; left: 612px; }
+        #button9 { bottom: 65px; right: 690px; }
+        #button10 { bottom: 120px; right: 745px; }
+        #button11 { bottom: 195px; right: 770px; }
+        #button12 { bottom: 270px; right: 745px; }
+    </style>
+    <script>
+        // Function to play a sound
+        function playSound(soundId) {
+            const sound = document.getElementById(soundId);
+            sound.play();
+        }
+
+        // Button 1 functionality
+        document.getElementById('button1').addEventListener('click', function() {
+            playSound('sound1');
+        });
+
+        // Button 2 functionality
+        document.getElementById('button2').addEventListener('click', function() {
+            playSound('sound2');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button3').addEventListener('click', function() {
+            playSound('sound3');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button4').addEventListener('click', function() {
+            playSound('sound4');
+        });
+        
+        // Button 3 functionality
+        document.getElementById('button5').addEventListener('click', function() {
+            playSound('sound5');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button6').addEventListener('click', function() {
+            playSound('sound6');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button7').addEventListener('click', function() {
+            playSound('sound7');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button8').addEventListener('click', function() {
+            playSound('sound8');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button9').addEventListener('click', function() {
+            playSound('sound9');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button10').addEventListener('click', function() {
+            playSound('sound10');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button11').addEventListener('click', function() {
+            playSound('sound11');
+        });
+
+        // Button 3 functionality
+        document.getElementById('button12').addEventListener('click', function() {
+            playSound('sound12');
+        });
+
+
+    </script>
+    
+</body>
+</html>
